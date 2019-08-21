@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>가입폼</title>
+<style type="text/css">
+	table {
+		border: 1px solid black;
+	}
+	
+	tr {
+	 	border: 1px solid blue;
+	}
+	
+	th,td {
+		border: 1px solid red; 
+	}
+</style>
+</head>
+<body>
+<h2>가입폼</h2>
+<form action="01_simpleTarget.html">
+	이름*   <input type="text" name="username" size="10"/>
+	<br />
+	아이디*  <input type="text" name="userID" size="10"/>
+	<br />
+	비밀번호* <input type="password" name="userpass" size="10"/>
+	<br />
+	비밀번호 확인* <input type="password" name="passConfirm" size="10"/>
+	<br />
+	성별 	   <input type="radio" name="gender" value="M" /> 남
+		   <input type="radio" name="gender" value="F" /> 여
+	<br />
+	연령대 	<select >
+				<option>==연령대를 선택==</option>
+				<option value="10">10대</option>
+				<option value="20">20대</option>
+				<option value="30">30대</option>
+				<option value="40">40대</option>
+				<option value="50">50대</option>
+				<option value="60">60대</option>
+				<option value="70">70대</option>
+				<option value="80">80대</option>
+			</select>
+	<br />
+	취미  <input type="checkbox" name="hobby" value="스포츠"/> 스포츠
+		<input type="checkbox" name="hobby" value="서핑"/> 서핑
+		<input type="checkbox" name="hobby" value="캠핑"/> 캠핑
+		<input type="checkbox" name="hobby" value="노래"/> 노래
+		<input type="checkbox" name="hobby" value="여행"/> 여행
+	<br />
+	이메일*	<input type="text" name="emailId" /> @
+				<select name="email" >
+				<option>==메일주소 선택==</option>
+				<option value="naver.com">네이버</option>
+				<option value="daum.net">다음</option>
+				<option value="gmail.com">구글</option>
+				<option value="nate.com">네이트</option>
+				<option value="yahoo.co.kr">야후코리아</option>
+				</select>
+	<br />
+	전화번호 <select name="phone1" >
+		  <option>==번호선택==</option>
+		  </select>
+		  -
+		  <input name="phone2"/>
+		  -
+		  <input name="phone3"/>
+	<br />	  
+	주소 	<select name="address" >
+		<option>==주소 선택==</option>
+		</select>
+	<br />
+	소개말 <textarea name="intro" id="" cols="30" rows="10"></textarea>
+	<br />
+	<input type="submit" value="가입하기"> &nbsp;
+	<input type="reset" value="초기화" />
+	<br />
+</form>
+</body>
+</html>
