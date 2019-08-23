@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>25 이벤트 : mouseEventMove</title>
+<style type="text/css">
+	div {
+		width: 100px;
+		height: 100px;
+		padding: 20px;
+		margin:  20px;
+		}
+</style>
+<script type="text/javascript">
+	//마우스 엔터 이벤트 처리 함수
+	function myMouseEnter() {
+		document.getElementById("contents")
+				.style.backgroundColor = "magenta";
+	}
+	// 마우스 무브 이벤트 처리함수
+	function myMouseLeave() {
+		document.getElementById("contents")
+				.style.backgroundColor = "cyan";
+	}
+	// 마우스 리브 이벹트 처리함수
+	function myMouseLeave() {
+		document.getElementById("contents")
+				.style.backgroundColor = "lightgrey";
+	}
+</script>
+</head>
+<body>
+	<h3>마우스 엔터, 무브 이벤트</h3>
+	<hr />
+	<div id="contents" onMouseEnter="myMouseEnter()">
+		이 영역에 마우스가 들어오면 배경색이 magenta 로 변합니다.<br />
+		마우스가 떠나면 배경색이 lightgrey로 돌아갑니다.
+	</div>	
+	<div id="contents2">
+		이 영역에서 아무스가 움직이면 배경색이 cyan 으로 변합니다 <br />
+		마우스가 떠나면 뱌경색이 lightgrey로 돌아갑니다.
+	</div>	
+	<div id="contents3" onMouseLeane="myMouseEnter()">
+		이 영역에서 아무스가 움직이면 배경색이 cyan 으로 변합니다 <br />
+		마우스가 떠나면 뱌경색이 lightgrey로 돌아갑니다.
+	</div>		
+</body>
+</html>
